@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product1 = "Плюмбус";
+        let product2 = "Грязна туалетна умага";
+        let product3 = "Ручка от ручки";
+
+        let productPrice1 = 280;
+        let productPrice2 = 56;
+        let productPrice3 = 12.50;
+
+        let productQuantity1 = +prompt("Укажи те количество продуктив " + product1 + " цена " + productPrice1, 0);
+        let productQuantity2 = +prompt('Укажи те количество продуктив ' + product2 + ' цена ' + productPrice2, 0);
+        let productQuantity3 = +prompt('Укажи те количество продуктив ' + product3 + ' цена ' + productPrice3, 0);
+
+        let totalPrice = 0;
+
+        totalPrice += productPrice1 * productQuantity1;
+        totalPrice += productPrice1 * productQuantity2;
+        totalPrice += productPrice1 * productQuantity3;
+
+        
+        let shippingMessage;
+        if (totalPrice > 1000) {
+            shippingMessage = "Доставку привезем"
+        } else {
+            shippingMessage = "Сам заберай нищеброд"
+        }
+        alert('Обща сума' + totalPrice + ". " + shippingMessage);
+    </script>
+</body>
+</html>
